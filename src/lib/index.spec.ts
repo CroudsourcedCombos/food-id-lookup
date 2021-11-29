@@ -1,7 +1,8 @@
 import test from 'ava';
 
-import { idToObject, objectToStr } from '.';
 import { FoodObject } from '../types/FoodObjectTypes';
+
+import { idToObject, objectToId } from '.';
 
 test('parse soda', (t) => {
   const test_string = 'soda+SP';
@@ -56,7 +57,7 @@ test('sandwich object to string', (t) => {
       spread: 'Pesto Sauce',
     },
   };
-  t.is(objectToStr(test_obj), 'sand+WVPRENNP');
+  t.is(objectToId(test_obj), 'sand+WVPRENNP');
 });
 
 test('soda object to string', (t) => {
@@ -67,5 +68,5 @@ test('soda object to string', (t) => {
       flavor: 'Plain',
     },
   };
-  t.is(objectToStr(test_obj), 'soda+SP');
+  t.is(objectToId(test_obj), 'soda+SP');
 });

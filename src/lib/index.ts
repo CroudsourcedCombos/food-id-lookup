@@ -46,7 +46,7 @@ export function idToObject(id: string): FoodObject | undefined {
   return undefined;
 }
 
-export function objectToStr(obj: FoodObject): string | undefined {
+export function objectToId(obj: FoodObject): string | undefined {
   switch (obj.type) {
     case 'soda': {
       const ingredients = sodaIngredientsToStr(obj.ingredients);

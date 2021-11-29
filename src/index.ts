@@ -1,2 +1,2 @@
-import { idToObject } from './lib';
-export default { idToObject };
+import { idToObject, objectToId } from './lib';
+export default { idToObject, objectToId };
