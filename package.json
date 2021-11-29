@@ -1,6 +1,6 @@
 {
   "name": "food-id-lookup",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Convert a food ID to it's object form and back",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
